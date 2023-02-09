@@ -2,9 +2,10 @@
 
 import joblib
 import pandas as pd
-from config import Location, ProcessConfig
 from prefect import flow, task
 from sklearn.model_selection import train_test_split
+
+from config import Location, ProcessConfig
 
 
 @task

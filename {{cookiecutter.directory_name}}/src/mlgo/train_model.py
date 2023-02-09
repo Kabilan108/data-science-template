@@ -2,10 +2,11 @@
 import joblib
 import numpy as np
 import pandas as pd
-from config import Location, ModelParams
 from prefect import flow, task
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
+
+from config import Location, ModelParams
 
 
 @task

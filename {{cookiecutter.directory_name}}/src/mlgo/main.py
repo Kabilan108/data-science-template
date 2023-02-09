@@ -1,11 +1,12 @@
 """
 Create an iris flow
 """
-from config import Location, ModelParams, ProcessConfig
 from prefect import flow
 from process import process
 from run_notebook import run_notebook
 from train_model import train
+
+from config import Location, ModelParams, ProcessConfig
 
 
 @flow
